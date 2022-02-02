@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&family=Belleza&display=swap");
+.home {
+  background-image: url("/public//assets//home/background-home-desktop.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-size: cover;
+}
+
+.home .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 167px 9px;
+  width: 100%;
+}
+
+.home .hero div {
+  color: white;
+  width: 30.33%;
+}
+
+.home .hero div > p:nth-child(2) {
+  font-family: 'Belleza', sans-serif;
+  font-size: 111px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.home .hero div > :is(p:nth-child(1), p:nth-child(3)) {
+  font-family: 'Barlow', sans-serif;
+}
+
+.home .hero div > p:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.home .hero div > p:nth-child(3) {
+  line-height: 24px;
+}
+
+.home .hero a {
+  color: black;
+  font-size: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Belleza', sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  padding: 108px 66px;
+  text-decoration: none;
+}
+
+.home .hero a:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    background-image: url("/public/assets/home/background-home-mobile.jpg");
+    background-size: 100% 100%;
+  }
+  .home .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 977px;
+  }
+  .home .hero div {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .home .hero button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/*# sourceMappingURL=home.css.map */

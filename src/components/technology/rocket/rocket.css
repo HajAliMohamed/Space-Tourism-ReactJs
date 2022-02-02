@@ -1,0 +1,78 @@
+.rocket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 110px 0 0;
+  width: 100%;
+}
+
+.rocket img {
+  height: 450px;
+}
+
+.rocket > div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 263px;
+  margin-left: 80px;
+}
+
+.rocket > div > p:nth-child(1) {
+  font-size: 30px;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+.rocket > div > p:nth-child(2) {
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.rocket > div > p:nth-child(3) {
+  color: gray;
+  margin-top: 47px;
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 768px) {
+  .rocket {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .rocket img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .rocket > div {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    margin-left: 0;
+    padding: 0 50px;
+  }
+}
+/*# sourceMappingURL=rocket.css.map */

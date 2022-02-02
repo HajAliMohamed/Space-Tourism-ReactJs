@@ -1,0 +1,75 @@
+.crew {
+  background-image: url("/public//assets//crew/background-crew-desktop.jpg");
+  background-size: 100% 100%;
+}
+
+.crew > p {
+  color: white;
+  font-family: 'Belleza', sans-serif;
+  font-size: 30px;
+  margin: 120px 0 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.crew > p span {
+  font-weight: bold;
+  margin-right: 12px;
+  font-family: 'Belleza', sans-serif;
+}
+
+.crew .hero {
+  margin-top: 100px;
+}
+
+.crew .hero ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 54px;
+}
+
+.crew .hero ul a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 20px;
+  font-family: 'Belleza', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.crew .hero ul a:hover {
+  color: white;
+}
+
+.crew .hero ul a:focus {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+@media only screen and (max-width: 768px) {
+  .crew {
+    background-image: url("/public/assets/crew/background-crew-mobile.jpg");
+  }
+  .crew .hero {
+    margin-top: 42px;
+  }
+  .crew .hero ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 400px;
+  }
+}
+/*# sourceMappingURL=crew.css.map */

@@ -1,0 +1,58 @@
+.rocket{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 110px 0 0;
+    width: 100%;
+
+    img{
+        height: 450px;
+    }
+
+    >div{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        height: 263px;
+        margin-left: 80px;
+        
+
+        >p:nth-child(1){
+            font-size: 30px;
+            color: #ccc;
+            text-transform: uppercase;
+        }
+
+        >p:nth-child(2){
+            font-size: 40px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        >p:nth-child(3){
+            color: gray;
+            margin-top: 47px;
+            font-size: 19px;
+        }
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+    .rocket{
+        flex-direction: column;
+        height: 100%;
+        img{
+            order: 1;
+        }
+
+        >div{
+            order: 2;
+            width: 100%;
+            margin-left: 0;
+            padding: 0 50px;
+        }
+    }
+}

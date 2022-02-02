@@ -1,0 +1,65 @@
+.crew{
+    background-image: url("/public//assets//crew/background-crew-desktop.jpg");
+    background-size: 100% 100%;
+    >p{
+        color: white;
+        font-family: 'Belleza', sans-serif;
+        font-size: 30px;
+        margin: 120px 0 0 20px;
+        text-transform: uppercase;
+        text-align: center;
+
+        span{
+            font-weight: bold;
+            margin-right: 12px;
+            font-family: 'Belleza', sans-serif;
+        }
+    }
+
+    .hero{
+        margin-top: 100px;
+
+
+        ul{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            list-style: none;
+            align-items: center;
+            padding: 0 54px;
+            a{
+                text-decoration: none;
+                color: #ccc;
+                font-size: 20px;
+                font-family: 'Belleza', sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: all 0.4s ease;
+
+                &:hover{
+                    color: white;
+                }
+
+                &:focus{
+                    color: white;
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+
+    .crew{
+        background-image: url("/public/assets/crew/background-crew-mobile.jpg");
+        .hero{
+            margin-top: 42px;
+            ul{
+                flex-direction: column;
+                height: 400px;
+            }
+        }
+    }
+
+}

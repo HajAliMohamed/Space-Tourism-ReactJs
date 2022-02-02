@@ -1,0 +1,76 @@
+.technology {
+  background-image: url("/public//assets//technology/background-technology-desktop.jpg");
+  background-size: 100% 100%;
+  height: 1015px;
+}
+
+.technology > p {
+  color: white;
+  font-family: 'Belleza', sans-serif;
+  font-size: 30px;
+  margin: 120px 0 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.technology > p span {
+  font-weight: bold;
+  margin-right: 12px;
+  font-family: 'Belleza', sans-serif;
+}
+
+.technology .hero {
+  margin-top: 100px;
+}
+
+.technology .hero ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 54px;
+}
+
+.technology .hero ul a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 20px;
+  font-family: 'Belleza', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 20px 27px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.technology .hero ul a:hover {
+  background-color: white;
+  color: #0b0e17;
+  border: none;
+}
+
+.technology .hero ul a:focus {
+  background-color: white;
+  color: #0b0e17;
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .technology {
+    background-image: url("/public/assets/technology/background-technology-mobile.jpg");
+    height: 1500px;
+  }
+  .technology .hero {
+    height: 917px;
+  }
+}
+/*# sourceMappingURL=technology.css.map */

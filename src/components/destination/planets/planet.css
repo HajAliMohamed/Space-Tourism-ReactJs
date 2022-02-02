@@ -1,0 +1,105 @@
+.planet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 167px 9px;
+  width: 100%;
+}
+
+.planet .card {
+  width: 711px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 400px;
+  padding: 0 143px;
+}
+
+.planet .card .name {
+  font-size: 102px;
+  font-weight: 100;
+  color: white;
+  font-family: 'Belleza', sans-serif;
+  text-transform: uppercase;
+}
+
+.planet .card .desc {
+  text-align: start;
+  color: white;
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+}
+
+.planet .card hr {
+  width: 100%;
+  border: none;
+  background-color: #626262;
+  height: 1px;
+}
+
+.planet .card > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.planet .card > div > div > p:nth-child(1) {
+  color: white;
+  font-size: 20px;
+}
+
+.planet .card > div > div > p:nth-child(2) {
+  font-size: 40px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .planet {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 44px 9px;
+  }
+  .planet img {
+    width: 300px;
+  }
+  .planet .card {
+    width: 100%;
+    padding: 0 18px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 110px;
+  }
+  .planet .card .desc {
+    margin: 50px 0;
+  }
+  .planet .card > div > div > p:nth-child(2) {
+    font-size: 26px;
+  }
+  .planet .card > div > div > p:nth-child(1) {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=planet.css.map */

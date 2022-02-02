@@ -1,0 +1,95 @@
+.planet{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 167px 9px;
+    width: 100%;
+
+
+    .card{
+        width: 711px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 400px;
+        padding: 0 143px;
+        .name{
+            font-size: 102px;
+            font-weight: 100;
+            color: white;
+            font-family: 'Belleza', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .desc{
+            text-align: start;
+            color: white;
+            font-size: 18px;
+            font-family: 'Barlow', sans-serif;
+        }
+
+
+        hr{
+            width: 100%;
+            border: none;
+            background-color: #626262;
+            height: 1px;
+        }
+
+        >div{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            >div{
+
+                >p:nth-child(1){
+                    color: white;
+                    font-size: 20px;
+                }
+
+                >p:nth-child(2){
+                    font-size: 40px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+    .planet{
+        flex-direction: column;
+        padding : 44px 9px;
+
+        img{
+            width: 300px;
+        }
+
+        .card{
+            width: 100%;
+            padding: 0 18px;
+            align-items: center;
+            margin-top: 110px;
+
+            .desc{
+                margin: 50px 0;
+            }
+
+            >div{
+                >div{
+                    >p:nth-child(2){
+                        font-size: 26px;
+                    }
+
+                    >p:nth-child(1){
+                        font-size: 13px;
+                    }
+                }
+            }
+
+        }
+    }
+}
