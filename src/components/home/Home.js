@@ -4,7 +4,7 @@ import Header from "../header/Header"
 import MobileNav from '../header/MobileNav';
 import { Link } from 'react-router-dom';
 function Home() {
-  return <div className='home' data-aos="zoom-in">
+  return <div className='home' >
             <MobileNav/>
             <Header/>
 
