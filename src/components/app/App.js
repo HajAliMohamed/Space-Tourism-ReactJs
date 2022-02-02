@@ -4,7 +4,7 @@ import Destination from "../destination/Destination"
 import Crew from "../crew/Crew"
 import Technology from "../technology/Technology"
 import "./style/app.css"
-import {BrowserRouter , Routes , Route} from "react-router-dom"
+import {BrowserRouter , Routes , Route , HashRouter} from "react-router-dom"
 import Planet from '../destination/planets/Planet';
 import Member from '../crew/member/Member';
 import Rocket from '../technology/rocket/Rocket';
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
 
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
           <Route path="/" element={ <Home />}/>  
           <Route path="/destination/*" element={<Destination/>} >
@@ -42,7 +42,7 @@ function App() {
           </Route>
         </Routes>
 
-    </BrowserRouter>
+    </HashRouter>
 
     </div>
   );
