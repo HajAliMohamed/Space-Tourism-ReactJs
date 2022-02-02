@@ -16,7 +16,7 @@ function Technology() {
     } )
   },[])
 
-  return <div className='technology'>
+  return <div className='technology' data-aos="zoom-in">
     <MobileNav/>
     <Header/>
 
