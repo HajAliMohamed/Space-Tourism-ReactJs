@@ -13,7 +13,7 @@ function Crew() {
     .then(res => res.json())
     .then(data => setItems(data))
   }, [])
-  return <div className='crew' data-aos="zoom-in">
+  return <div className='crew' >
     <MobileNav/>
     <Header/>
 

@@ -15,7 +15,7 @@ useEffect(()=>{
 
 } ,[])
 
-  return <div className='destination' data-aos="zoom-in">
+  return <div className='destination' >
     <MobileNav/>
     <Header/>
 
