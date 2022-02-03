@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Space-Tourism-ReactJs/static/css/main.58535827.css",
-    "main.js": "/Space-Tourism-ReactJs/static/js/main.aeedd7fc.js",
+    "main.js": "/Space-Tourism-ReactJs/static/js/main.03ae1630.js",
     "static/media/background-home-desktop.jpg": "/Space-Tourism-ReactJs/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
     "static/media/background-destination-desktop.jpg": "/Space-Tourism-ReactJs/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
     "static/media/background-crew-desktop.jpg": "/Space-Tourism-ReactJs/static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
@@ -10,10 +10,10 @@
     "static/media/background-destination-mobile.jpg": "/Space-Tourism-ReactJs/static/media/background-destination-mobile.e0131e27e751ead1a922.jpg",
     "index.html": "/Space-Tourism-ReactJs/index.html",
     "main.58535827.css.map": "/Space-Tourism-ReactJs/static/css/main.58535827.css.map",
-    "main.aeedd7fc.js.map": "/Space-Tourism-ReactJs/static/js/main.aeedd7fc.js.map"
+    "main.03ae1630.js.map": "/Space-Tourism-ReactJs/static/js/main.03ae1630.js.map"
   },
   "entrypoints": [
     "static/css/main.58535827.css",
-    "static/js/main.aeedd7fc.js"
+    "static/js/main.03ae1630.js"
   ]
 }
