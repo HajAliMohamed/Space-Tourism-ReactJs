@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {Link} from "react-router-dom"
 import "./mobileNav.css"
+import close from "./icon-close.svg"
 function MobileNav() {
 
     const[clicked,setClick] = useState(false)
@@ -15,7 +16,7 @@ function MobileNav() {
     }
   return <div className='mobile__navbar' data-aos="flip-up">
 
-        <img  onClick={handleClick}  className='humb' src='/assets/shared/icon-close.svg' alt='humburger'/>
+        <img  onClick={handleClick}  className='humb' src={close} alt='humburger'/>
 
         <ul className='mobile__navbar__lists'>
           <li><span>00</span><Link to='/'>Home</Link></li>
