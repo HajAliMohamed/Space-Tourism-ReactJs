@@ -9,7 +9,7 @@ function Crew() {
   const[items,setItems] = useState([])
 
   useEffect(()=>{
-    fetch("http://localhost:3001/crew")
+    fetch("https://raw.githubusercontent.com/HajAliMohamed/Space-Tourism-ReactJs/master/crews.json")
     .then(res => res.json())
     .then(data => setItems(data))
   }, [])

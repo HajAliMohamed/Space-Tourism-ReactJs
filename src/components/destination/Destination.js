@@ -9,7 +9,7 @@ function Destination() {
 const [items,setItems] = useState([])
 
 useEffect(()=>{
-  fetch("http://localhost:3001/destinations")
+  fetch("https://raw.githubusercontent.com/HajAliMohamed/Space-Tourism-ReactJs/master/destinations.json")
   .then(res => res.json())
   .then(data => setItems(data))
 

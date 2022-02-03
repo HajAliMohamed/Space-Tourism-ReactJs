@@ -9,7 +9,7 @@ function Technology() {
   const[items,setItems] = useState([]);
 
   useEffect(()=>{
-    fetch("http://localhost:3001/technology")
+    fetch("https://raw.githubusercontent.com/HajAliMohamed/Space-Tourism-ReactJs/master/technologys.json")
     .then(res => res.json())
     .then(data => {
       setItems(data)
