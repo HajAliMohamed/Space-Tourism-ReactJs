@@ -39,11 +39,11 @@ function Destination() {
         
        <Route path={`${destinations[0].name}`} element={<Planet key={destinations[0].name} img={moon} name={destinations[0].name} desc={destinations[0].description} distance={destinations[0].distance} time={destinations[0].travel}/>} />
 
-       <Route path={`${destinations[0].name}`} element={<Planet key={destinations[1].name} img={mars} name={destinations[1].name} desc={destinations[1].description} distance={destinations[1].distance} time={destinations[1].travel}/>} />
+       <Route path={`${destinations[1].name}`} element={<Planet key={destinations[1].name} img={mars} name={destinations[1].name} desc={destinations[1].description} distance={destinations[1].distance} time={destinations[1].travel}/>} />
 
-       <Route path={`${destinations[0].name}`} element={<Planet key={destinations[2].name} img={europa} name={destinations[2].name} desc={destinations[2].description} distance={destinations[2].distance} time={destinations[2].travel}/>} />
+       <Route path={`${destinations[2].name}`} element={<Planet key={destinations[2].name} img={europa} name={destinations[2].name} desc={destinations[2].description} distance={destinations[2].distance} time={destinations[2].travel}/>} />
 
-       <Route path={`${destinations[0].name}`} element={<Planet key={destinations[3].name} img={titan} name={destinations[3].name} desc={destinations[3].description} distance={destinations[3].distance} time={destinations[3].travel}/>} />
+       <Route path={`${destinations[3].name}`} element={<Planet key={destinations[3].name} img={titan} name={destinations[3].name} desc={destinations[3].description} distance={destinations[3].distance} time={destinations[3].travel}/>} />
 
           </Routes>
         </div>
