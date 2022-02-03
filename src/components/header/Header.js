@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import "./style/header.css"
 import { Link } from 'react-router-dom';
+import logo from "./logo.svg"
+import humb from "./icon-hamburger.svg"
 export default function Header() {
 
   const[clicked,setClick] = useState(false)
@@ -15,7 +17,7 @@ export default function Header() {
 
   return <div className='header' >
 
-        <img src='/public/assets/shared/logo.svg' alt='logo' />
+        <img src={logo} alt='logo' />
         <hr/>
 
         <ul className='header__navbar'>
@@ -25,7 +27,7 @@ export default function Header() {
           <li><span>03</span><Link to='/technology/LaunchVehicle'>Technology</Link></li>
         </ul>
 
-        <img onClick={handleClick} className='humb' src="/public/assets/shared/icon-hamburger.svg" alt='humburger'/>
+        <img onClick={handleClick} className='humb' src={humb} alt='humburger'/>
 
   </div>;
 }
