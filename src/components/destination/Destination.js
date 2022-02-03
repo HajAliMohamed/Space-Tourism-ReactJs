@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./destination.css"
 import Header from "../header/Header"
 import Planet from "./planets/Planet"
@@ -11,11 +11,20 @@ import titan from "./destinationImages/image-titan.webp"
 import europa from "./destinationImages/image-europa.webp"
 function Destination() {
 
-  console.log(destinations);
+
+  const[clicked,setClick] = useState(false)
+
+function handleClick(){
+  setClick(true)
+}
+
+function handleClose(){
+  setClick(false)
+}
 
   return <div className='destination' data-aos="zoom-in">
-    <MobileNav/>
-    <Header/>
+    <MobileNav isClicked={clicked} close={handleClose}/>
+    <Header click={handleClick}/>
 
     <div className='tab'>
         <p> <span>01</span> Pick your destination</p>

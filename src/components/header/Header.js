@@ -1,19 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./style/header.css"
 import { Link } from 'react-router-dom';
 import logo from "./logo.svg"
 import humb from "./icon-hamburger.svg"
-export default function Header() {
+export default function Header(props) {
 
-  const[clicked,setClick] = useState(false)
 
-  function handleClick(){
-      setClick(true)
-  }
-
-  if(clicked){
-    document.querySelector(".mobile__navbar").classList.add("open")
-  }
 
   return <div className='header' >
 
@@ -27,7 +19,9 @@ export default function Header() {
           <li><span>03</span><Link to='/technology/LaunchVehicle'>Technology</Link></li>
         </ul>
 
-        <img onClick={handleClick} className='humb' src={humb} alt='humburger'/>
+        <img className='humb' src={humb} alt='humburger' onClick={()=>{
+            props.click()
+        }}/>
 
   </div>;
 }

@@ -1,4 +1,4 @@
-import React  from 'react';
+import React,{useState}  from 'react';
 import "./crew.css"
 import Header from "../header/Header"
 import { Link, Route, Routes } from 'react-router-dom';
@@ -11,11 +11,19 @@ import VictorGlover from "./crewImages/image-victor-glover.webp"
 import AnoushehAnsari from "./crewImages/image-anousheh-ansari.webp"
 function Crew() {
 
+  const[clicked,setClick] = useState(false)
 
+  function handleClick(){
+    setClick(true)
+  }
+  
+  function handleClose(){
+    setClick(false)
+  }
 
   return <div className='crew' data-aos="zoom-in">
-    <MobileNav/>
-    <Header/>
+    <MobileNav isClicked={clicked} close={handleClose}/>
+    <Header click={handleClick} />
 
 
     <p><span>02</span>meet your crew</p>

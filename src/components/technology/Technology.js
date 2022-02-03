@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./technology.css"
 import Header from "../header/Header"
 import {Link , Route ,Routes} from "react-router-dom"
@@ -10,10 +10,20 @@ import SpacePort from "./technologyImages/image-spaceport-portrait.jpg"
 import SpaceCapsule from "./technologyImages/image-space-capsule-portrait.jpg"
 function Technology() {
 
+  const[clicked,setClick] = useState(false)
+
+  function handleClick(){
+    setClick(true)
+  }
+  
+  function handleClose(){
+    setClick(false)
+  }
+
 
   return <div className='technology' data-aos="zoom-in">
-    <MobileNav/>
-    <Header/>
+    <MobileNav isClicked={clicked} close={handleClose}/>
+    <Header click={handleClick}/>
 
 
    <p> <span>03</span>meet launch 101</p>

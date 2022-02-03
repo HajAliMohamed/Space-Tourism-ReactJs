@@ -1,22 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Link} from "react-router-dom"
 import "./mobileNav.css"
 import close from "./icon-close.svg"
-function MobileNav() {
+function MobileNav(props) {
 
-    const[clicked,setClick] = useState(false)
+  return <div className='mobile__navbar' data-aos="flip-up" style={props.isClicked ? {transform : "translateX(0)" , display : "block"} : {transform : "translateX(100%)"}} >
 
-
-    function handleClick(){
-        setClick(true)
-    }
-
-    if(clicked){
-        document.querySelector(".mobile__navbar").classList.remove("open")
-    }
-  return <div className='mobile__navbar' data-aos="flip-up">
-
-        <img  onClick={handleClick}  className='humb' src={close} alt='humburger'/>
+        <img className='humb' src={close} alt='humburger' onClick={()=>{
+          props.close()
+        }}/>
 
         <ul className='mobile__navbar__lists'>
           <li><span>00</span><Link to='/'>Home</Link></li>
