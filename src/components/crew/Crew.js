@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React  from 'react';
 import "./crew.css"
 import Header from "../header/Header"
 import { Link, Route, Routes } from 'react-router-dom';
@@ -7,9 +7,7 @@ import MobileNav from '../header/MobileNav';
 import crews from "./crews"
 function Crew() {
 
-  const[items,setItems] = useState([])
 
-  setItems(crews)
 
   return <div className='crew' data-aos="zoom-in">
     <MobileNav/>
@@ -31,7 +29,7 @@ function Crew() {
 
     <Routes>
     {
-        items.map((i)=>{
+      crews.map((i)=>{
           return (<Route path={`${i.id}`} element={<Member key={i.name} role={i.role} name={i.name} bio={i.bio} img={i.images.png}/>}/>)
         })
       }

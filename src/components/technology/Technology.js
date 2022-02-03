@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React from 'react';
 import "./technology.css"
 import Header from "../header/Header"
 import {Link , Route ,Routes} from "react-router-dom"
@@ -7,9 +7,6 @@ import MobileNav from '../header/MobileNav';
 import technologys from "./technologys"
 function Technology() {
 
-  const[items,setItems] = useState([]);
-
-  setItems(technologys)
 
   return <div className='technology' data-aos="zoom-in">
     <MobileNav/>
@@ -30,7 +27,7 @@ function Technology() {
 
 <Routes>
 {
-    items.map((i)=>{
+  technologys.map((i)=>{
       return (<Route path={`${i.id}`} element={<Rocket key={i.id} name={i.name} desc={i.description} img={i.images.portrait}/>}/>)
     })
   }

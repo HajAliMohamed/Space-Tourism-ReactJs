@@ -4,7 +4,7 @@ import Destination from "../destination/Destination"
 import Crew from "../crew/Crew"
 import Technology from "../technology/Technology"
 import "./style/app.css"
-import {BrowserRouter , Routes , Route , HashRouter} from "react-router-dom"
+import {Routes , Route , HashRouter} from "react-router-dom"
 import Planet from '../destination/planets/Planet';
 import Member from '../crew/member/Member';
 import Rocket from '../technology/rocket/Rocket';

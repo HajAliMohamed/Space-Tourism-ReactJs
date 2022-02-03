@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React from 'react';
 import "./destination.css"
 import Header from "../header/Header"
 import Planet from "./planets/Planet"
@@ -7,9 +7,7 @@ import MobileNav from '../header/MobileNav';
 import destinations from "./destinations"
 function Destination() {
 
-const [items,setItems] = useState([])
-
-  setItems(destinations)
+  console.log(destinations);
 
   return <div className='destination' data-aos="zoom-in">
     <MobileNav/>
@@ -33,7 +31,7 @@ const [items,setItems] = useState([])
         <Routes>
 
             {
-              items.map((i)=>{ 
+              destinations.map((i)=>{ 
                 return (
                 <Route path={`${i.name}`} element={<Planet key={i.name} img={i.images.png} name={i.name} desc={i.description} distance={i.distance} time={i.travel}/>} />
 
