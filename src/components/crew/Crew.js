@@ -4,7 +4,7 @@ import Header from "../header/Header"
 import { Link, Route, Routes } from 'react-router-dom';
 import Member from './member/Member';
 import MobileNav from '../header/MobileNav';
-import crews from "src/crews"
+import crews from "./crews"
 function Crew() {
 
   const[items,setItems] = useState([])

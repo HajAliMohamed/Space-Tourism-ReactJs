@@ -4,7 +4,7 @@ import Header from "../header/Header"
 import {Link , Route ,Routes} from "react-router-dom"
 import Rocket from './rocket/Rocket';
 import MobileNav from '../header/MobileNav';
-import technologys from "src/technologys"
+import technologys from "./technologys"
 function Technology() {
 
   const[items,setItems] = useState([]);

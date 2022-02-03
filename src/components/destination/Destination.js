@@ -4,7 +4,7 @@ import Header from "../header/Header"
 import Planet from "./planets/Planet"
 import { Link, Route, Routes} from "react-router-dom"
 import MobileNav from '../header/MobileNav';
-import destinations from "src/destinations"
+import destinations from "./destinations"
 function Destination() {
 
 const [items,setItems] = useState([])
