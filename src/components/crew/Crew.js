@@ -1,18 +1,16 @@
-import React, {useState ,useEffect} from 'react';
+import React, {useState} from 'react';
 import "./crew.css"
 import Header from "../header/Header"
 import { Link, Route, Routes } from 'react-router-dom';
 import Member from './member/Member';
 import MobileNav from '../header/MobileNav';
+import crews from "/src/crews"
 function Crew() {
 
   const[items,setItems] = useState([])
 
-  useEffect(()=>{
-    fetch("https://raw.githubusercontent.com/HajAliMohamed/Space-Tourism-ReactJs/master/crews.json")
-    .then(res => res.json())
-    .then(data => setItems(data))
-  }, [])
+  setItems(crews)
+
   return <div className='crew' data-aos="zoom-in">
     <MobileNav/>
     <Header/>

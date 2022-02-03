@@ -1,20 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import "./technology.css"
 import Header from "../header/Header"
 import {Link , Route ,Routes} from "react-router-dom"
 import Rocket from './rocket/Rocket';
 import MobileNav from '../header/MobileNav';
+import technologys from "/src/technologys"
 function Technology() {
 
   const[items,setItems] = useState([]);
 
-  useEffect(()=>{
-    fetch("https://raw.githubusercontent.com/HajAliMohamed/Space-Tourism-ReactJs/master/technologys.json")
-    .then(res => res.json())
-    .then(data => {
-      setItems(data)
-    } )
-  },[])
+  setItems(technologys)
 
   return <div className='technology' data-aos="zoom-in">
     <MobileNav/>

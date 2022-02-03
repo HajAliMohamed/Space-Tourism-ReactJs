@@ -1,5 +1,5 @@
-{
-    "destinations": [
+
+  const   destinations = [
         {
           "name": "Moon",
           "images": {
@@ -41,4 +41,6 @@
           "travel": "7 years"
         }
       ]
-}
+
+
+export default destinations

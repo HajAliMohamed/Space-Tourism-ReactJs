@@ -1,19 +1,15 @@
-import React, {useEffect , useState} from 'react';
+import React, { useState} from 'react';
 import "./destination.css"
 import Header from "../header/Header"
 import Planet from "./planets/Planet"
 import { Link, Route, Routes} from "react-router-dom"
 import MobileNav from '../header/MobileNav';
+import destinations from "/src/destinations"
 function Destination() {
 
 const [items,setItems] = useState([])
 
-useEffect(()=>{
-  fetch("https://raw.githubusercontent.com/HajAliMohamed/Space-Tourism-ReactJs/master/destinations.json")
-  .then(res => res.json())
-  .then(data => setItems(data))
-
-} ,[])
+  setItems(destinations)
 
   return <div className='destination' data-aos="zoom-in">
     <MobileNav/>
