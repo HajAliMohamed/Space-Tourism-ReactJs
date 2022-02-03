@@ -1,7 +1,7 @@
 import React from 'react';
 import "./member.css"
 function Member(props) {
-  return <div className='member' data-aos="zoom-out">
+  return <div className='member' data-aos="zoom-in-down">
       <div>
           <p>{props.role}</p>
           <p>{props.name}</p>
