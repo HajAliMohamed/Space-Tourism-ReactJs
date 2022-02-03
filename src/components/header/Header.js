@@ -15,7 +15,7 @@ export default function Header() {
 
   return <div className='header' >
 
-        <img src='/assets/shared/logo.svg' alt='logo' />
+        <img src='/public/assets/shared/logo.svg' alt='logo' />
         <hr/>
 
         <ul className='header__navbar'>
@@ -25,7 +25,7 @@ export default function Header() {
           <li><span>03</span><Link to='/technology/LaunchVehicle'>Technology</Link></li>
         </ul>
 
-        <img onClick={handleClick} className='humb' src="/assets/shared/icon-hamburger.svg" alt='humburger'/>
+        <img onClick={handleClick} className='humb' src="/public/assets/shared/icon-hamburger.svg" alt='humburger'/>
 
   </div>;
 }
