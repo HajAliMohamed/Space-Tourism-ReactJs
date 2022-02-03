@@ -1,7 +1,7 @@
 import React from 'react';
 import "./rocket.css"
 function Rocket(props) {
-  return <div className='rocket' data-aos="fade-up">
+  return <div className='rocket' data-aos="flip-up">
 
       <div>
           <p>the technology ...</p>

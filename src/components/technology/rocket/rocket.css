@@ -65,6 +65,7 @@
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    width: 100%;
   }
   .rocket > div {
     -webkit-box-ordinal-group: 3;
