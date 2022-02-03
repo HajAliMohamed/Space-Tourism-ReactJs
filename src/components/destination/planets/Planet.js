@@ -2,7 +2,7 @@ import React from 'react';
 import "./planet.css"
 function Planet(props) {
   return <div className='planet' data-aos="fade-up">
-            <img src={props.img} alt='planet'/>
+            <img src={require(props.img)} alt='planet'/>
 
             <div className='card'>
 
