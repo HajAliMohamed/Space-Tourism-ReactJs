@@ -5,6 +5,9 @@ import {Link , Route ,Routes} from "react-router-dom"
 import Rocket from './rocket/Rocket';
 import MobileNav from '../header/MobileNav';
 import technologys from "./technologys"
+import LaunchVehicle from "./technologyImages/image-launch-vehicle-portrait.jpg"
+import SpacePort from "./technologyImages/image-spaceport-portrait.jpg"
+import SpaceCapsule from "./technologyImages/image-space-capsule-portrait.jpg"
 function Technology() {
 
 
@@ -26,11 +29,15 @@ function Technology() {
         </ul>
 
 <Routes>
-{
-  technologys.map((i)=>{
-      return (<Route path={`${i.id}`} element={<Rocket key={i.id} name={i.name} desc={i.description} img={i.images.portrait}/>}/>)
-    })
-  }
+
+
+   <Route path={`${technologys[0].id}`} element={<Rocket key={technologys[0].id} name={technologys[0].name} desc={technologys[0].description} img={LaunchVehicle}/>}/>
+
+   <Route path={`${technologys[1].id}`} element={<Rocket key={technologys[1].id} name={technologys[1].name} desc={technologys[1].description} img={SpacePort}/>}/>
+
+   <Route path={`${technologys[2].id}`} element={<Rocket key={technologys[2].id} name={technologys[2].name} desc={technologys[2].description} img={SpaceCapsule}/>}/>
+
+
 </Routes>
 </div>
 

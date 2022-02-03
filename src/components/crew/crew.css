@@ -1,5 +1,5 @@
 .crew {
-  background-image: url("/public//assets//crew/background-crew-desktop.jpg");
+  background-image: url("./crewImages/background-crew-desktop.jpg");
   background-size: 100% 100%;
 }
 
@@ -59,7 +59,7 @@
 
 @media only screen and (max-width: 768px) {
   .crew {
-    background-image: url("/public/assets/crew/background-crew-mobile.jpg");
+    background-image: url("./crewImages/background-crew-mobile.jpg");
   }
   .crew .hero {
     margin-top: 42px;

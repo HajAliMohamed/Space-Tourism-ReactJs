@@ -1,5 +1,5 @@
 .mobile__navbar {
-  background-image: url("/public/assets//technology/background-technology-desktop.jpg");
+  background-image: url("/src/components/technology/technologyImages/background-technology-mobile.jpg");
   background-size: cover;
   position: fixed;
   top: 0;
