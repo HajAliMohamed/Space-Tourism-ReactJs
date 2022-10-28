@@ -3,7 +3,7 @@ import "./home.css"
 import Header from "../header/Header"
 import MobileNav from '../header/MobileNav';
 import { Link } from 'react-router-dom';
-
+import video from "./Virtual Space Tourism Flight to the Stratosphere - YouTube.mkv"
 function Home() {
 
 
@@ -18,6 +18,10 @@ function handleClose(){
 }
 
   return <div className='home' data-aos="zoom-in">
+
+<video className='videoTag' autoPlay loop >
+    <source src={video} type='video/mp4' />
+</video>
             <MobileNav isClicked={clicked} close={handleClose}/>
             <Header click={handleClick} />
 
